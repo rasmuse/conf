@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+SCRIPT_PATH=`realpath $0`
+SCRIPT_DIR=`dirname $SCRIPT_PATH`
+out_dir_base=${SCRIPT_DIR}"/dconf-settings"
+rm -rf $out_dir_base
+for dconf_path in $(cat $SCRIPT_DIR/dconf-paths)
+do
+    out_dir=${out_dir_base}/${dconf_path}
+    out_path=${out_dir}"conf.txt"
+    mkdir -p $out_dir
+    dconf dump $dconf_path > $out_path
+done

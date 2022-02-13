@@ -1,0 +1,6 @@
+[/]
+disabled-extensions=['ubuntu-dock@ubuntu.com', 'desktop-icons@csoriano']
+
+[extensions/desktop-icons]
+show-home=false
+show-trash=false

@@ -1,0 +1,65 @@
+[app-folders]
+folder-children=['Utilities', 'YaST']
+
+[app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'gnome-system-monitor.desktop', 'gucharmap.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'simple-scan.desktop', 'vinagre.desktop', 'yelp.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[input-sources]
+sources=[('xkb', 'us')]
+xkb-options=@as []
+
+[interface]
+gtk-im-module='gtk-im-context-simple'
+gtk-theme='Yaru'
+
+[notifications]
+application-children=['update-manager', 'snap-store-ubuntu-software-local-file', 'firefox', 'org-gnome-nautilus', 'ca-desrt-dconf-editor', 'apport-gtk', 'spotify']
+
+[notifications/application/apport-gtk]
+application-id='apport-gtk.desktop'
+
+[notifications/application/ca-desrt-dconf-editor]
+application-id='ca.desrt.dconf-editor.desktop'
+
+[notifications/application/firefox]
+application-id='firefox.desktop'
+
+[notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[notifications/application/snap-store-ubuntu-software-local-file]
+application-id='snap-store_ubuntu-software-local-file.desktop'
+
+[notifications/application/spotify]
+application-id='spotify.desktop'
+
+[notifications/application/update-manager]
+application-id='update-manager.desktop'
+
+[peripherals/keyboard]
+delay=uint32 250
+repeat-interval=uint32 7
+
+[peripherals/mouse]
+speed=0.82352941176470584
+
+[peripherals/touchpad]
+speed=0.41911764705882359
+tap-to-click=false
+two-finger-scrolling-enabled=true
+
+[privacy]
+disable-microphone=false
+report-technical-problems=true
+
+[sound]
+allow-volume-above-100-percent=false
+event-sounds=false

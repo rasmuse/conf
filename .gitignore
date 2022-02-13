@@ -1,3 +1,7 @@
 *
+!conf/
+!conf/**/*
 !.gitignore
 !.gitconfig
+!.profile
+!.bashrc
