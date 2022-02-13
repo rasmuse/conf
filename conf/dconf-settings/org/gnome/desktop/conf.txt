@@ -14,7 +14,7 @@ translate=true
 
 [input-sources]
 sources=[('xkb', 'us')]
-xkb-options=@as []
+xkb-options=['caps:escape']
 
 [interface]
 gtk-im-module='gtk-im-context-simple'
@@ -52,6 +52,7 @@ repeat-interval=uint32 7
 speed=0.82352941176470584
 
 [peripherals/touchpad]
+click-method='areas'
 speed=0.41911764705882359
 tap-to-click=false
 two-finger-scrolling-enabled=true
