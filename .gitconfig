@@ -1,0 +1,10 @@
+[user]
+	email = mr@rasmuseinarsson.se
+	name = Rasmus Einarsson
+[core]
+	editor = vim
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	lo = log --oneline -n 10
