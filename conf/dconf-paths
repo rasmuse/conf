@@ -1,3 +1,4 @@
 /org/gnome/terminal/
 /org/gnome/desktop/
 /org/gnome/shell/
+/org/gnome/settings-daemon/

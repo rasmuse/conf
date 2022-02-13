@@ -1,0 +1,8 @@
+[plugins/power]
+lid-close-ac-action='nothing'
+lid-close-battery-action='nothing'
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-type='nothing'
+
+[plugins/xsettings]
+hinting='slight'
