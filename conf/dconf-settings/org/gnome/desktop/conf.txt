@@ -13,7 +13,7 @@ name='suse-yast.directory'
 translate=true
 
 [input-sources]
-sources=[('xkb', 'us')]
+sources=[('xkb', 'us'), ('xkb', 'se'), ('xkb', 'es')]
 xkb-options=['caps:escape']
 
 [interface]
