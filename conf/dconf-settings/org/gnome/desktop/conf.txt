@@ -17,6 +17,7 @@ sources=[('xkb', 'us'), ('xkb', 'se'), ('xkb', 'es')]
 xkb-options=['caps:escape']
 
 [interface]
+enable-animations=false
 gtk-im-module='gtk-im-context-simple'
 gtk-theme='Yaru'
 
