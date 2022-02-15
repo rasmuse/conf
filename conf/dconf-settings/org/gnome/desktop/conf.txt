@@ -23,6 +23,7 @@ gtk-theme='Yaru'
 
 [notifications]
 application-children=['update-manager', 'snap-store-ubuntu-software-local-file', 'firefox', 'org-gnome-nautilus', 'ca-desrt-dconf-editor', 'apport-gtk', 'spotify']
+show-in-lock-screen=false
 
 [notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
