@@ -10,9 +10,11 @@
 	},
 	"extensions": {
 		"recommendations": [
+			"bungcip.better-toml",
 			"sleistner.vscode-fileutils",
 			"yzhang.markdown-all-in-one",
-			"ms-python.python"
+			"ms-python.python",
+			"tomphilbin.gruvbox-themes",
 		]
 	}
 }
