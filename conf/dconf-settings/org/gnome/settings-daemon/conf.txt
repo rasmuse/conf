@@ -1,3 +1,10 @@
+[plugins/color]
+night-light-enabled=true
+night-light-last-coordinates=(40.396125119942404, -3.6963140000000001)
+night-light-schedule-automatic=false
+night-light-schedule-from=21.0
+night-light-temperature=uint32 2498
+
 [plugins/media-keys]
 email=['<Super>e']
 home=['<Super>f']
