@@ -1,6 +1,20 @@
 [/]
 disabled-extensions=['ubuntu-dock@ubuntu.com', 'desktop-icons@csoriano']
+enabled-extensions=['pop-shell@system76.com']
 
 [extensions/desktop-icons]
 show-home=false
 show-trash=false
+
+[extensions/pop-shell]
+active-hint=true
+gap-inner=uint32 0
+gap-outer=uint32 0
+hint-color-rgba='rgb(212,184,92)'
+show-title=false
+tile-by-default=true
+
+[keybindings]
+open-application-menu=@as []
+toggle-message-tray=['<Super>v']
+toggle-overview=@as []

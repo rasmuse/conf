@@ -22,7 +22,7 @@ gtk-im-module='gtk-im-context-simple'
 gtk-theme='Yaru'
 
 [notifications]
-application-children=['update-manager', 'snap-store-ubuntu-software-local-file', 'firefox', 'org-gnome-nautilus', 'ca-desrt-dconf-editor', 'apport-gtk', 'spotify']
+application-children=['update-manager', 'snap-store-ubuntu-software-local-file', 'firefox', 'org-gnome-nautilus', 'ca-desrt-dconf-editor', 'apport-gtk', 'spotify', 'gnome-network-panel', 'gnome-datetime-panel']
 show-in-lock-screen=false
 
 [notifications/application/apport-gtk]
@@ -33,6 +33,12 @@ application-id='ca.desrt.dconf-editor.desktop'
 
 [notifications/application/firefox]
 application-id='firefox.desktop'
+
+[notifications/application/gnome-datetime-panel]
+application-id='gnome-datetime-panel.desktop'
+
+[notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
 
 [notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -66,3 +72,20 @@ report-technical-problems=true
 [sound]
 allow-volume-above-100-percent=false
 event-sounds=false
+
+[wm/keybindings]
+close=['<Super>q', '<Alt>F4']
+maximize=@as []
+minimize=['<Super>comma']
+move-to-monitor-down=@as []
+move-to-monitor-left=['<Primary><Shift><Alt><Super>h']
+move-to-monitor-right=['<Primary><Shift><Alt><Super>l']
+move-to-monitor-up=@as []
+move-to-workspace-down=['<Primary><Shift><Alt><Super>j']
+move-to-workspace-up=['<Primary><Shift><Alt><Super>k']
+switch-to-workspace-down=['<Primary><Super>j']
+switch-to-workspace-left=@as []
+switch-to-workspace-right=@as []
+switch-to-workspace-up=['<Primary><Super>k']
+toggle-maximized=['<Super>m']
+unmaximize=@as []
