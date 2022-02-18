@@ -1,0 +1,41 @@
+#!/bin/python3
+
+import subprocess
+import re
+import json
+
+
+def gnome_shell_eval(script):
+    cmd = (
+        "gdbus call --session --dest org.gnome.Shell --object-path /org/gnome/Shell "
+        "--method org.gnome.Shell.Eval "
+        f'"{script}"'
+    )
+    error_code, output = subprocess.getstatusoutput(cmd)
+    assert error_code == 0, (error_code, output)
+    m = re.match(f"\(true, '([^']*)'\)", output)
+    assert m, m
+    json_data = m.group(1)
+    if len(json_data) == 0:
+        return None
+    return json.loads(json_data)
+
+
+def main():
+    n_layouts = len(
+        gnome_shell_eval(
+            "imports.ui.status.keyboard.getInputSourceManager().inputSources"
+        )
+    )
+    current_idx = gnome_shell_eval(
+        "imports.ui.status.keyboard.getInputSourceManager().currentSource"
+    )["index"]
+    next_idx = (current_idx + 1) % n_layouts
+    gnome_shell_eval(
+        "imports.ui.status.keyboard.getInputSourceManager()"
+        f".inputSources[{next_idx}].activate()"
+    )
+
+
+if __name__ == "__main__":
+    main()
