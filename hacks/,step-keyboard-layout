@@ -3,6 +3,16 @@
 import subprocess
 import re
 import json
+import argparse
+
+parser = argparse.ArgumentParser(description="Move to another keyboard layout.")
+parser.add_argument(
+    "steps",
+    type=int,
+    nargs="?",
+    help="Number of steps to take (default +1).",
+    default=1,
+)
 
 
 def gnome_shell_eval(script):
@@ -22,6 +32,7 @@ def gnome_shell_eval(script):
 
 
 def main():
+    args = parser.parse_args()
     n_layouts = len(
         gnome_shell_eval(
             "imports.ui.status.keyboard.getInputSourceManager().inputSources"
@@ -30,7 +41,7 @@ def main():
     current_idx = gnome_shell_eval(
         "imports.ui.status.keyboard.getInputSourceManager().currentSource"
     )["index"]
-    next_idx = (current_idx + 1) % n_layouts
+    next_idx = (current_idx + args.steps) % n_layouts
     gnome_shell_eval(
         "imports.ui.status.keyboard.getInputSourceManager()"
         f".inputSources[{next_idx}].activate()"
