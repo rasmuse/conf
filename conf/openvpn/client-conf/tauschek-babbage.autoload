@@ -1,0 +1,7 @@
+{
+    "autostart": true,
+    "user-auth": {
+        "autologin": true
+    }
+}
+
