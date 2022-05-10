@@ -1,0 +1,6 @@
+[Desktop Entry] 
+Name=Thunderbird 
+Exec=/opt/thunderbird/thunderbird 
+Terminal=true 
+Icon=/opt/thunderbird/icons/thunderbird-desktop.png 
+Type=Application
