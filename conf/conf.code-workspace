@@ -15,6 +15,10 @@
 			"yzhang.markdown-all-in-one",
 			"ms-python.python",
 			"tomphilbin.gruvbox-themes",
+			"ivan-bocharov.stan-vscode",
+			"James-Yu.latex-workshop",
+			"fcrespo82.markdown-table-formatter",
+			"ms-vscode.wordcount",
 		]
 	}
 }

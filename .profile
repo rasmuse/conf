@@ -36,3 +36,8 @@ eval "$(pyenv init --path)"
 if [ -d "$HOME/hacks" ] ; then
     PATH="$HOME/hacks:$PATH"
 fi
+
+# texlive binaries
+if [ -d "/usr/local/texlive/2021/bin/x86_64-linux" ] ; then
+    PATH="/usr/local/texlive/2021/bin/x86_64-linux:$PATH"
+fi
